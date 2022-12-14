@@ -11,15 +11,36 @@
 			font-size: 36pt;
 			text-align: center;
 		}
+		.initalBtn{
+			background-color: #FFF;
+		}
+		.resultBtn{
+			background-color: #0F0;
+			visibility: hidden;
+		}
+		.verse{
+			text-align: center;
+			visibility: visible;
+		}
 	</style>
 </head>
 <body>
-	<h1 class="title">Welcome</h1>
+	<h1 class="title" id="title">Welcome</h1>
+	<h1 class="verse" id="verse"></h1>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.5/seedrandom.min.js"></script>
+	<script src=verses.js></script>
 	<script src=index.js></script>
 	<select name="material-selector" id="material-selector">
-		<option value="[-1,1]"></option>
 		<option value="[1,160]">January 7 material</option>
+		<option value="[1,250]">Through Colossians</option>
+		<option value="[1,275]">Through Philemon</option>
+		<option value="[1,388]">Through 1 Timothy</option>
+		<option value="[1,434]">Through Titus</option>
+		<option value="[1,517]">Through 2 Timothy</option>
 	</select>
-	<button onclick="submitMaterial()" id="submitMaterial">Submit</button>
+	<button onclick="quoteBtn(1)" class="initalBtn" id="quoteBtn">Quote</button>
+	<button onclick="quoteBtn(0)" class="initalBtn" id="bequotedBtn">Be quoted to</button>
+	<br>
+	<button onclick="verseResult(1)" class="resultBtn" id="verseCorrect">correct</button>
+	<button onclick="verseResult(0)" class="resultBtn" id="verseIncorrect">incorrect</button>
 </body>
