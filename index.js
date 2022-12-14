@@ -1,5 +1,5 @@
-//let seed = prompt('Please enter in a seed for the RNG')
-seed = 'josh';
+let seed = prompt('Please enter in a seed for the RNG')
+//seed = 'josh';
 let generate_random_number = new Math.seedrandom(seed);
 var verseList = [];
 var index = 0;
