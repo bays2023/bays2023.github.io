@@ -12,10 +12,24 @@
 			text-align: center;
 		}
 		.initalBtn{
-			background-color: #FFF;
+			background-color: #888;
+			border: none;
+			color: #FFF;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
 		}
 		.resultBtn{
-			background-color: #0F0;
+			background-color: #888;
+			border: none;
+			color: #FFF;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
 			visibility: hidden;
 		}
 		.verse{
@@ -30,7 +44,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.5/seedrandom.min.js"></script>
 	<script src=verses.js></script>
 	<script src=index.js></script>
-	<select name="material-selector" id="material-selector">
+	<select name="material-selector" style="initalBtn" id="material-selector">
 		<option value="[1,160]">January 7 material</option>
 		<option value="[1,250]">Through Colossians</option>
 		<option value="[1,275]">Through Philemon</option>
@@ -42,5 +56,7 @@
 	<button onclick="quoteBtn(0)" class="initalBtn" id="bequotedBtn">Be quoted to</button>
 	<br>
 	<button onclick="verseResult(1)" class="resultBtn" id="verseCorrect">correct</button>
+	<br>
+	<br>
 	<button onclick="verseResult(0)" class="resultBtn" id="verseIncorrect">incorrect</button>
 </body>
