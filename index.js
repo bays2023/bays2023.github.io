@@ -18,7 +18,7 @@ function getMaterial(){
 	document.getElementById("quoteBtn").style.visibility = 'hidden';
 	document.getElementById("bequotedBtn").style.visibility = 'hidden';
 	document.getElementById("verseCorrect").style.visibility = 'visible';
-	document.getElementById("verseIncorrect").style.visibility = 'visible';
+	//document.getElementById("verseIncorrect").style.visibility = 'visible';
 	var refMin = parseInt(choiceRange.split(",")[0]) - 1;
 	var refMax = parseInt(choiceRange.split(",")[1]) - 1;
 	for(var i = refMin; i <= refMax; i++){ verseList.unshift(masterList[i]);}
@@ -38,7 +38,7 @@ function verseResult(correct){
 		if(verseList.length == 0){
 			document.getElementById("title").innerHTML = "You are finished!";
 			document.getElementById("verseCorrect").style.visibility = 'hidden';
-			document.getElementById("verseIncorrect").style.visibility = 'hidden';
+			//document.getElementById("verseIncorrect").style.visibility = 'hidden';
 		}
 	}
 	index = randInt(0, verseList.length);
