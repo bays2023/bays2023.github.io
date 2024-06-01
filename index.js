@@ -18,6 +18,7 @@ function getMaterial(){
 	document.getElementById("quoteBtn").style.visibility = 'hidden';
 	document.getElementById("bequotedBtn").style.visibility = 'hidden';
 	document.getElementById("verseCorrect").style.visibility = 'visible';
+	document.getElementById("remaining").style.display = 'block';
 	//document.getElementById("verseIncorrect").style.visibility = 'visible';
 	var refMin = parseInt(choiceRange.split(",")[0]) - 1;
 	var refMax = parseInt(choiceRange.split(",")[1]) - 1;
@@ -30,6 +31,7 @@ function quoteBtn(showVerse){
 	index = randInt(0, verseList.length);
 	document.getElementById("title").innerHTML = verseList[index][1];
 	if(showingVerse){ document.getElementById("verse").innerHTML = verseList[index][2]; }
+	document.getElementById("remaining").innerHTML = "Remaining: " + verseList.length;
 }
 
 function verseResult(correct){
@@ -38,11 +40,13 @@ function verseResult(correct){
 		if(verseList.length == 0){
 			document.getElementById("title").innerHTML = "You are finished!";
 			document.getElementById("verseCorrect").style.visibility = 'hidden';
+			document.getElementById("remaining").style.display = 'none';
 			//document.getElementById("verseIncorrect").style.visibility = 'hidden';
 		}
 	}
 	index = randInt(0, verseList.length);
 	document.getElementById("title").innerHTML = verseList[index][1];
+	document.getElementById("remaining").innerHTML = "Remaining: " + verseList.length;
 	if(showingVerse){ document.getElementById("verse").innerHTML = verseList[index][2]; }
 }
 
