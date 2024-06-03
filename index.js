@@ -46,7 +46,7 @@ function verseResult(correct){
 	}
 	index = randInt(0, verseList.length);
 	document.getElementById("title").innerHTML = verseList[index][1];
-	document.getElementById("remaining").innerHTML = "Remaining: " + verseList.length;
+	document.getElementById("remaining").innerHTML = "Remaining: " + (verseList.length - 1);
 	if(showingVerse){ document.getElementById("verse").innerHTML = verseList[index][2]; }
 }
 
