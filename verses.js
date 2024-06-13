@@ -344,7 +344,7 @@ let masterList = [["1", "Acts 1:1", "The former treatise have I made, O Theophil
 ["344", "Acts 10:8", "And when he had declared all these things unto them, he sent them to Joppa."],
 ["345", "Acts 10:9", "On the morrow, as they went on their journey, and drew nigh unto the city, Peter went up upon the housetop to pray about the sixth hour:"],
 ["346", "Acts 10:10", "And he became very hungry, and would have eaten: but while they made ready, he fell into a trance,"],
-["347", "Acts 10:11", "And saw heaven opened, and a certain vessel descending unto him, as it had been a great sheet knit at the four corners, and let down to the earth:"],
+["347", "Acts 10:11", "And saw heaven opened, and a certain vessel descending unto him, as it had been a great sheet knit at the four corners, and let down to the earth:\n\nBoth \"unto him\" and \"upon him\" are acceptable quotes"],
 ["348", "Acts 10:12", "Wherein were all manner of fourfooted beasts of the earth, and wild beasts, and creeping things, and fowls of the air."],
 ["349", "Acts 10:13", "And there came a voice to him, Rise, Peter; kill, and eat."],
 ["350", "Acts 10:14", "But Peter said, Not so, Lord; for I have never eaten any thing that is common or unclean."],
