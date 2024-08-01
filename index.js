@@ -1,3 +1,14 @@
+/*
+Greetings to whomever was curious about this code.
+
+I know it is a horrible idea to manually encode the breakpoints and verses, but I made this site in a school computer lab in about half an hour in 2022, and I do not wish to refactor at this time.
+
+
+Thank you,
+
+Joshua Bays
+*/
+
 let seed = prompt('Please enter in a seed for the RNG')
 //seed = 'josh';
 let generate_random_number = new Math.seedrandom(seed);
@@ -23,6 +34,7 @@ function getMaterial(){
 	var refMin = parseInt(choiceRange.split(",")[0]) - 1;
 	var refMax = parseInt(choiceRange.split(",")[1]) - 1;
 	for(var i = refMin; i <= refMax; i++){ verseList.unshift(masterList[i]);}
+	//document.getElementById("remaining").innerHTML = "Remaining: " + refMax - refMin;
 }
 
 function quoteBtn(showVerse){
@@ -31,7 +43,7 @@ function quoteBtn(showVerse){
 	index = randInt(0, verseList.length);
 	document.getElementById("title").innerHTML = verseList[index][1];
 	if(showingVerse){ document.getElementById("verse").innerHTML = verseList[index][2]; }
-	document.getElementById("remaining").innerHTML = "Remaining: " + verseList.length - 1;
+	document.getElementById("remaining").innerHTML = "Remaining: " + (verseList.length - 1);
 }
 
 function verseResult(correct){
@@ -46,9 +58,6 @@ function verseResult(correct){
 	}
 	index = randInt(0, verseList.length);
 	document.getElementById("title").innerHTML = verseList[index][1];
-	document.getElementById("remaining").innerHTML = "Remaining: " + (verseList.length - 1);
 	if(showingVerse){ document.getElementById("verse").innerHTML = verseList[index][2]; }
+	document.getElementById("remaining").innerHTML = "Remaining: " + (verseList.length - 1);
 }
-
-//alert(randInt(1,10));
-//alert(randInt(1,10));
